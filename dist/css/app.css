@@ -168,3 +168,76 @@ ul{
 .navbar .container nav .login{
     margin-left: auto;
 }
+.intro h1{
+    font-size: clamp(2.1rem, 3vw + 1rem, 3.8rem);
+
+}
+.intro .btn{
+    padding-inline: 1rem;
+}
+
+.intro p{
+    font-size: 1.2rem;
+    opacity: 0.75;
+}
+.buttons-wrapper{
+    align-items: unset;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+}
+main{
+    flex-direction: column;
+    gap: 1rem;
+}
+main > *{
+    width: 100%;
+}
+/* description & advantages */
+.description,.advantages{
+    padding-block: max(7rem,14%);
+    /* background-image: url(../images/illustration-editor-desktop.svg); */
+    position: relative;
+    overflow: visible;
+
+}
+.description .img-desktop{
+    position: absolute;
+    top: 5rem;
+    right: -17rem;
+}
+.description .img-mobile,.advantages .img-mobile{
+    display: none;
+}
+.text p{
+    color: var(--Very-dark-grayish-blue-);
+}
+.text,.img-mobile{
+    max-width: 32.5rem;
+    margin-top: max(3.5rem, 9%)
+}
+.text:nth-of-type(2){
+    margin-top: max(3.5rem, 6%)
+}
+.text .font-heading{
+    margin-bottom: max(1rem, 5%) ;
+}
+.advantages .img-desktop{
+    position: absolute;
+    top: 12%;
+    left: -16.5rem;
+    object-fit: contain;
+    max-width:64% ;
+
+}
+.advantages .text{
+    margin-left: auto;
+
+}
+.advantages .text:first-of-type{
+    margin-top: max(3.5rem, 7%)
+}
+.advantages, .description{
+    margin-bottom: 3rem;
+}
