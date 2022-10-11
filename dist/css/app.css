@@ -1,0 +1,170 @@
+/* basic styling */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+    --Light-red: hsl(356, 100%, 66%);
+    --Very-light-red: hsl(355, 100%, 74%);
+    --Very-dark-blue: hsl(208, 49%, 24%);
+    --White: hsl(0, 0%, 100%);
+    --Grayish-blue: hsl(240, 2%, 79%);
+    --Light-Grayish-blue: hsla(240, 3%, 79%, 0.321);
+    --Very-dark-grayish-blue-: hsl(207, 13%, 34%);
+    --Very-dark-black-blue: hsl(240, 10%, 16%);
+    --bg-gradient1:hsl(13, 100%, 72%);
+    --bg-gradient2:hsl(353, 100%, 62%);
+    --body-gradient1:hsl(237, 17%, 21%);
+    --body-gradient2: hsl(237, 23%, 32%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* header and intro section */
+.head-intro{
+    width: 100%;
+    background:
+            url(../images/bg-pattern-intro-desktop.svg) top 51% left 25.3%  no-repeat,
+            linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
+    flex-direction: column;
+    overflow: visible;
+    min-height: 65vh;
+    gap: 10%;
+    padding-bottom: 1rem;
+    border-bottom-left-radius:10vh;
+}
+.navbar{
+    width: 100%;
+
+}
+.navbar .container{
+    padding-block: 3rem;
+    gap: 3rem;
+    position: relative;
+}
+
+.navbar .container .logo img{
+    width: 100% ;
+}
+.navbar .container .open-close{
+    display: none;
+    position: relative;
+    margin-left: auto;
+    min-width: 2rem;
+}
+.navbar .container .open, .navbar .container .close{
+    display: none;
+    cursor: pointer;
+    transition: opacity .5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.navbar .container .open{
+    z-index: 2;
+    animation: to-left .5s ease-in-out;
+}
+.navbar .container .close{
+    z-index: 1;
+    opacity: 0;
+    width: 80%;
+}
+.navbar .container .open-hide{
+    z-index: 1;
+    opacity: 0;
+}
+.navbar .container .close-show{
+    z-index: 2;
+    opacity: 1;
+}
+.container nav{
+    flex-grow: 1;
+}
+.container .header-nav-title{
+    padding: 1.2rem 1.5rem;
+    padding-right: .5rem;
+    cursor: pointer;
+}
+.container .menu:hover .header-nav-title, .container nav .login li:hover span {
+    opacity: 1;
+}
+.container .menu:hover .header-nav-title span::after,  .container nav .login li:hover span::after{
+    transform: scaleX(1);
+}
+.container .menu:hover  .dropdown{
+    clip-path: inset(-50% -50% -50% -50%);
+}
+.container .menu:hover .arrow{
+    transform: rotate(180deg);
+}
+.container .header-nav-title ,.login span{
+    opacity: .75;
+    font-weight: 500;
+}
+.container .header-nav-title span{
+    position: relative;
+}
+.container .header-nav-title span::after,.container nav .login span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: var(--White);
+    transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+}
+.header-nav-title .arrow{
+    margin-left: .5rem;
+    transition: transform .5s ease-in-out;
+}
+.a-dark{
+    display: none;
+}
+.container nav .dropdown{
+    position: absolute;
+    width: 130%;
+    background-color: var(--White);
+    padding: 1rem 1.2rem;
+    left: 0;
+    line-height: 2;
+    border-radius: .4rem;
+    box-shadow: rgba(0, 0, 0, 0.173) 0px 20px 15px;
+    transition: clip-path .5s ease-in-out;
+    clip-path: inset(0% 0% 100% 0%);
+    z-index: 2;
+}
+.dropdown a{
+    color: var(--Very-dark-blue);
+    font-size: .85rem;
+    font-weight: 500;
+
+}
+.dropdown a:hover{
+    font-weight: 700;
+}
+.navbar .container nav li{
+    position: relative;
+}
+.navbar .container nav li,.login a{
+    color: var(--White);
+
+}
+.navbar .container nav .login{
+    margin-left: auto;
+}
