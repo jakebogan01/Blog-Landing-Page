@@ -168,6 +168,9 @@ ul{
 .navbar .container nav .login{
     margin-left: auto;
 }
+
+/* intro */
+
 .intro h1{
     font-size: clamp(2.1rem, 3vw + 1rem, 3.8rem);
 
@@ -187,6 +190,7 @@ ul{
     gap: 1rem;
     text-align: center;
 }
+/* main */
 main{
     flex-direction: column;
     gap: 1rem;
@@ -241,6 +245,7 @@ main > *{
 .advantages, .description{
     margin-bottom: 3rem;
 }
+/* middle */
 .middle{
     overflow: visible;
     background: url(../images/bg-pattern-circles.svg) top 85% left -50% no-repeat,
