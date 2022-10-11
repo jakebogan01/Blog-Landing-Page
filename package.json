@@ -1,0 +1,11 @@
+{
+  "name": "blog-landing-page",
+  "version": "1.0.0",
+  "description": "Blog Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake Bogan",
+  "license": "ISC"
+}
