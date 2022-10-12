@@ -4,7 +4,7 @@
   "description": "Blog Landing Page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "minify": "css-minify -f dist/css/app.css"
   },
   "author": "Jake Bogan",
   "license": "ISC"
