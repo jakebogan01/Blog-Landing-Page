@@ -9,7 +9,7 @@ open_close.addEventListener("click",(event)=>{
 
 dropdown.forEach((element)=>{
     element.addEventListener("click",(event)=>{
-        if(document.querySelectorAll(".show-dropdown").length==1){
+        if(document.querySelectorAll(".show-dropdown").length===1){
             if(!event.currentTarget.children[1].classList.contains("show-dropdown")){
                 document.querySelector(".show-dropdown").classList.remove("show-dropdown");
                 document.querySelector(".header-opacity").classList.remove("header-opacity");

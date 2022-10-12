@@ -34,9 +34,7 @@ ul{
 /* header and intro section */
 .head-intro{
     width: 100%;
-    background:
-            url(./dist/img/content/bg-pattern-intro-desktop.svg) top 51% left 25.3%  no-repeat,
-            linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
+    background: url('../img/content/bg-pattern-intro-desktop.svg') top 51% left 25.3%  no-repeat, linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
     flex-direction: column;
     overflow: visible;
     min-height: 65vh;
@@ -245,7 +243,7 @@ main > *{
 /* middle */
 .middle{
     overflow: visible;
-    background: url(./dist/img/content/bg-pattern-circles.svg) top 85% left -50% no-repeat,
+    background: url(../img/content/bg-pattern-circles.svg) top 85% left -50% no-repeat,
     linear-gradient(to left,  var(--body-gradient2),var(--body-gradient1));
     border-radius: 0 12vh 0 12vh ;
     min-height: 25vh;
@@ -434,9 +432,7 @@ footer .container a:hover::after  {
 @media(max-width:50rem){
     /* intro-header */
     .head-intro{
-        background:
-                url(./dist/img/content/bg-pattern-intro-mobile.svg) top 35% left 35%  no-repeat ,
-                linear-gradient(to bottom, var(--bg-gradient1), var(--bg-gradient2));
+        background: url('../img/content/bg-pattern-intro-mobile.svg') top 35% left 35%  no-repeat, linear-gradient(to bottom, var(--bg-gradient1), var(--bg-gradient2));
     }
     /* Navbar */
     .navbar .container .open, .navbar .container .close, .open-close{
@@ -579,7 +575,7 @@ footer .container a:hover::after  {
     .middle{
         height: fit-content !important;
         margin-top: 4rem;
-        background: url(./dist/img/content/bg-pattern-circles.svg) center -14.5rem / cover no-repeat,
+        background: url(../img/content/bg-pattern-circles.svg) center -14.5rem / cover no-repeat,
         linear-gradient(to left,  var(--body-gradient2),var(--body-gradient1))
 
     ;
