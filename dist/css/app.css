@@ -35,7 +35,7 @@ ul{
 .head-intro{
     width: 100%;
     background:
-            url(../images/bg-pattern-intro-desktop.svg) top 51% left 25.3%  no-repeat,
+            url(./dist/img/content/bg-pattern-intro-desktop.svg) top 51% left 25.3%  no-repeat,
             linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
     flex-direction: column;
     overflow: visible;
@@ -144,7 +144,7 @@ ul{
     left: 0;
     line-height: 2;
     border-radius: .4rem;
-    box-shadow: rgba(0, 0, 0, 0.173) 0px 20px 15px;
+    box-shadow: rgba(0, 0, 0, 0.173) 0 20px 15px;
     transition: clip-path .5s ease-in-out;
     clip-path: inset(0% 0% 100% 0%);
     z-index: 2;
@@ -198,13 +198,10 @@ main{
 main > *{
     width: 100%;
 }
-/* description & advantages */
 .description,.advantages{
     padding-block: max(7rem,14%);
-    /* background-image: url(../images/illustration-editor-desktop.svg); */
     position: relative;
     overflow: visible;
-
 }
 .description .img-desktop{
     position: absolute;
@@ -248,11 +245,8 @@ main > *{
 /* middle */
 .middle{
     overflow: visible;
-    background: url(../images/bg-pattern-circles.svg) top 85% left -50% no-repeat,
-    linear-gradient(to left,  var(--body-gradient2),var(--body-gradient1))
-
-;
-    overflow: visible;
+    background: url(./dist/img/content/bg-pattern-circles.svg) top 85% left -50% no-repeat,
+    linear-gradient(to left,  var(--body-gradient2),var(--body-gradient1));
     border-radius: 0 12vh 0 12vh ;
     min-height: 25vh;
     padding-block: 7.35rem;
@@ -441,7 +435,7 @@ footer .container a:hover::after  {
     /* intro-header */
     .head-intro{
         background:
-                url(../images/bg-pattern-intro-mobile.svg) top 35% left 35%  no-repeat ,
+                url(./dist/img/content/bg-pattern-intro-mobile.svg) top 35% left 35%  no-repeat ,
                 linear-gradient(to bottom, var(--bg-gradient1), var(--bg-gradient2));
     }
     /* Navbar */
@@ -459,7 +453,7 @@ footer .container a:hover::after  {
         clip-path: inset(0% 0% 100% 0%);
         padding-inline: 1.5rem;
         border-radius: .4rem;
-        box-shadow: rgba(0, 0, 0, 0.173) 0px 20px 15px;
+        box-shadow: rgba(0, 0, 0, 0.173) 0 20px 15px;
         padding-block: 1.5rem;
         transition: clip-path .5s ease-in-out;
     }
@@ -585,7 +579,7 @@ footer .container a:hover::after  {
     .middle{
         height: fit-content !important;
         margin-top: 4rem;
-        background: url(../images/bg-pattern-circles.svg) center -14.5rem / cover no-repeat,
+        background: url(./dist/img/content/bg-pattern-circles.svg) center -14.5rem / cover no-repeat,
         linear-gradient(to left,  var(--body-gradient2),var(--body-gradient1))
 
     ;
