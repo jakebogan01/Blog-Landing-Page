@@ -37,9 +37,8 @@ ul{
     background: url('../img/content/bg-pattern-intro-desktop.svg') top 51% left 25.3%  no-repeat, linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
     flex-direction: column;
     overflow: visible;
-    min-height: 65vh;
     gap: 10%;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
     border-bottom-left-radius:10vh;
 }
 .navbar{
@@ -197,9 +196,11 @@ main > *{
     width: 100%;
 }
 .description,.advantages{
-    padding-block: max(7rem,14%);
     position: relative;
     overflow: visible;
+    padding: 10.625rem 0;
+    max-width: 87.5rem;
+    margin: 0 auto;
 }
 .description .img-desktop{
     position: absolute;
